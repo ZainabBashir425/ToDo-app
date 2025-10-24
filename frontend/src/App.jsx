@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 // src/App.jsx
 import { useContext } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import TodoPage from './pages/Todopage';
+import TodoPage from './pages/TodoPage.jsx';
 import { AuthContext } from './contexts/AuthContext.jsx';
 
 const ProtectedRoute = ({ children }) => {
