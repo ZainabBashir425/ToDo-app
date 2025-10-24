@@ -19,8 +19,6 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <li><Link to="/login" className="hover:font-bold">Login</Link></li>
-            <li><Link to="/signup" className="hover:font-bold">Signup</Link></li>
           </>
         )}
       </ul>

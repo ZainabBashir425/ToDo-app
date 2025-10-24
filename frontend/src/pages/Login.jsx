@@ -1,5 +1,5 @@
 // src/pages/Login.jsx
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { AuthContext } from '../contexts/AuthContext.jsx';
 import { useNavigate, Link } from 'react-router-dom';
 
@@ -9,6 +9,12 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [err, setErr] = useState(null);
   const navigate = useNavigate();
+
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) navigate("/", { replace: true });
+  }, [navigate]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
