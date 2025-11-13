@@ -5,7 +5,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import TodoPage from './pages/Todopage.jsx';
+import TodoPage from './pages/TodoPage.jsx';
 import { AuthContext } from './contexts/AuthContext.jsx';
 
 const ProtectedRoute = ({ children }) => {
